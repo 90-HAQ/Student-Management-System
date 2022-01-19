@@ -1,0 +1,468 @@
+:root /*
+setting varibles with asigned colors as root values*/
+{
+    --main-color: #4C84FF;
+    --primary-bg-color: #fff;
+    --secondary-bg-color: #eee;
+    --primary-text-color: #222;
+    --secondary-text-color: #666; 
+}
+
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script&display=swap');
+
+html::-webkit-scrollbar /* setting value for scrollbar */
+{
+    width: 1.3rem;
+}
+
+html::-webkit-scrollbar-track /* setting value for scrollbar */
+{
+    background-color: var(--secondary-bg-color);
+}
+
+html::-webkit-scrollbar-thumb /* setting value for scrollbar */
+{
+    background-color: var(--main-color);
+}
+
+
+.header {
+    border-bottom: 2px solid #00c9b7;
+    margin-top: 20px !important;
+    margin-bottom: 20px !important;
+    font-family: 'Dancing Script', cursive;
+    font-size: 20px !important;
+}
+.header-container {
+    margin-right: 0px !important;
+    margin-left: 0px !important;
+}
+.bg-light {
+
+    background: #00c9b7 !important;
+    -webkit-box-shadow: 5px 9px 43px 1px rgba(0,0,0,0.18); 
+	box-shadow: 5px 9px 43px 1px rgba(0,0,0,0.18);
+    position: sticky;
+    top: 0px;
+    z-index: 10;
+}
+.bg-light > a {
+    color: #fff !important;
+}
+.navbar-nav > a {
+    color: #fff !important;
+}
+.navbar-nav > a:hover {
+    text-decoration: underline;
+}
+img {
+    height: 400px;
+    vertical-align: middle;
+    border-style: none;
+}
+body {
+    background : #eee ;
+}
+.card {
+    border : none !important;
+    border-bottom: 3px solid #00c9b7 !important;
+}
+input[type=text] {
+
+    background : #eee ;
+    border: none !important;
+    box-shadow: 0px 1px 1px #ddd !important;
+    autocomplete: off;
+}
+input[type=text]:focus{
+    background : #eee ;
+    border: none !important;
+    box-shadow: 0px 4px 5px #ccc !important;
+}
+.thead-light {
+
+}
+.table .thead-light th {
+    color : #fff !important;
+    background: #00c9b7 !important;
+    border: none !important;
+}
+footer {
+    height: 10px;
+    width: 100%;
+    margin-top: 60px;
+    background:#00c9b7 ;
+}
+
+
+/* welcome /main-page css */
+
+body{
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.Main
+{
+   
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+     min-height: 60vh;
+    min-width: 50vw;
+    /* width:800px;
+    height:50vh; */
+    background-image: linear-gradient(#C70039,  #F39C12);   
+    color:black;
+}
+
+.Mcolor
+{
+    font-size: 24px;
+    color: white;
+    letter-spacing: 0.5rem;
+    border-bottom: 4px solid black;
+}
+
+.button1
+{
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.btn1
+{
+    position: relative;
+    background-color: transparent; 
+    color: black; 
+    font-weight: 600;
+}
+
+.btn1:hover
+{
+    border-radius: 25px;
+    background-color: white;
+    color: #4C84FF;
+}
+
+
+/* login page css */
+
+.main
+{
+    position: fixed;
+    top: 18%;
+    left: 28%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    height: 500px;
+    width: 800px;
+    border-radius: 0% 5% 5% 0%;
+    background-color: #F39C12;
+    color:black;
+    box-shadow: 10px 10px 5px 5px grey;
+
+}
+
+.signu_form
+{
+    position: fixed;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    height: 500px;
+    width: 600px;
+    border-radius: 0% 5% 5% 0%;
+    background-color: #F39C12;
+    color:black;
+    box-shadow: 10px 10px 5px 5px grey;
+}
+
+.alert_danger
+{
+    font-size: 18px;;
+    background-color: red;
+    padding: 1% 5% 1% 5%;
+    color: black;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+.sinputs    
+{
+    display: flex;
+    justify-content: center;
+    background-color: transparent;
+    flex-direction: column;
+    width: 350px;
+}
+
+input:placeholder-shown,
+input[type="name"], 
+input[type="password"]
+{
+    color:black;
+    font-size: 20px;
+    height: 40px;
+    border-radius: 5px;
+    border: 2px solid black;
+    padding: 10px;
+}
+
+.button2
+{
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.btn2
+{
+    position: relative;
+    background-color: transparent; 
+    color: black; 
+    border: 2px solid black;
+}
+
+.btn2:hover
+{
+    border-radius: 25px;
+    background-color: black;
+    color: #F39C12;
+}
+
+
+
+
+
+@media (max-width: 786px) 
+{
+    .Main
+    {
+        height: 600px;
+        width: 500px;
+        transform: translate(1%, 10%);
+        border-radius: 10px;
+        border: 2px solid black;
+    }
+    .Mcolor
+    {
+        font-size: 18px;
+    }
+
+    .signu_form
+    {
+        transform: translate(30%, 20%);
+        position: fixed;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: column;
+        height: 500px;
+        width: 500px;
+        border-radius: 0% 5% 5% 0%;
+        background-color: #F39C12;
+        color:black;
+        box-shadow: 10px 10px 5px 5px grey;
+    }
+
+    .alert_danger
+    {
+        font-size: 14px;
+        background-color: red;
+        padding: 1% 5% 1% 5%;
+        color: black;
+        border: 2px solid black;
+        border-radius: 5px;
+    }
+
+    .sinputs    
+    {
+        display: flex;
+        justify-content: center;
+        background-color: transparent;
+        flex-direction: column;
+        width: 250px;
+    }
+
+    input:placeholder-shown,
+    input[type="name"], 
+    input[type="password"]
+    {
+        letter-spacing: 0.2rem;
+        color:black;
+        font-size:20px;
+        height: 40px;
+        border-radius: 5px;
+        border: 2px solid black;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 425px) 
+{
+    .Main
+    {
+        height: 200px;
+        width: 300px;
+        transform: translate(0%, 0%);
+        border-radius: 10px;
+        border: 2px solid black;
+    }
+    .Mcolor
+    {
+        letter-spacing: normal;
+        font-size: 14px;
+    }
+    .button1
+    {
+        padding: 10px 10px;
+        font-size: 12px;
+    }
+
+    .signu_form
+    {
+        transform: translate(15%, 20%);
+        position: fixed;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: column;
+        height: 500px;
+        width: 350px;
+        border-radius: 0% 5% 5% 0%;
+        background-color: #F39C12;
+        color:black;
+        box-shadow: 10px 10px 5px 5px grey;
+    }
+
+    .alert_danger
+    {
+        font-size: 14px;
+        background-color: red;
+        padding: 1% 5% 1% 5%;
+        color: black;
+        border: 2px solid black;
+        border-radius: 5px;
+    }
+
+    .sinputs    
+    {
+        display: flex;
+        justify-content: center;
+        background-color: transparent;
+        flex-direction: column;
+        width: 250px;
+    }
+
+    input:placeholder-shown,
+    input[type="name"], 
+    input[type="password"]
+    {
+        letter-spacing: 0.2rem;
+        color:black;
+        font-size:20px;
+        height: 40px;
+        border-radius: 5px;
+        border: 2px solid black;
+        padding: 10px;
+    }
+
+    .circle
+    {
+        visibility: hidden;
+    }
+}
+
+@media (max-width: 360px) 
+{
+    .Main
+    {
+        height: 300px;
+        width: 250px;
+        transform: translate(1%, 0%);
+        border-radius: 10px;
+        border: 2px solid black;
+    }
+    .Mcolor
+    {
+        letter-spacing: normal;
+        font-size: 10px;
+    }
+    .button1
+    {
+        padding: 5px 5px;
+        font-size: 10px;
+    }
+
+    .signu_form
+    {
+        transform: translate(15%, 20%);
+        position: fixed;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: column;
+        height: 400px;
+        width: 250px;
+        border-radius: 0% 5% 5% 0%;
+        background-color: #F39C12;
+        color:black;
+        box-shadow: 10px 10px 5px 5px grey;
+    }
+
+    .alert_danger
+    {
+        font-size: 14px;
+        background-color: red;
+        padding: 1% 5% 1% 5%;
+        color: black;
+        border: 2px solid black;
+        border-radius: 5px;
+    }
+
+    .sinputs    
+    {
+        display: flex;
+        justify-content: center;
+        background-color: transparent;
+        flex-direction: column;
+        width: 200px;
+    }
+
+    input:placeholder-shown,
+    input[type="name"], 
+    input[type="password"]
+    {
+        letter-spacing: normal;
+        color:black;
+        font-size:20px;
+        height: 40px;
+        border-radius: 5px;
+        border: 2px solid black;
+        padding: 10px;
+    }
+}
+
